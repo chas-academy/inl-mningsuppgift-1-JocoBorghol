@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-10">
+  <title>Budgetkoll</title>
+  <style>
+    body {font-family:sans-serif;max-width:380px;margin:2rem auto;}
+  </style>
+  <!-- 0.teckensnitt (all text i body), 1. bredd sidans innehåll (text/bild), 2. marginal uppifrån rem eller px, auto alltid i mitten -->
+
+   
+ <link rel="stylesheet" href="styles.css">
+   <script src="budget.js" defer></script>
+</head>
+<img src="https://www.akaviaaspekt.se/siteassets/bilder/genrebilder-utan-manniskor/fem_loneargument.jpg?preset=ArticleTeaserHighlight" alt="">
+<body>
+  <h1>Budgetkoll - Vi hjälper dig ta kontrollen över din ekonomi!</h1>
+<!-- h1 rubrik -->
+
+  <input type="text"   id="beskrivningsruta"   placeholder="Beskrivning">
+  <input type="number" id="beloppruta" placeholder="Belopp">
+  <!-- type text tillåter endast text, type number tillåter endast nummer -->
+  <!-- placeholder, text som visas i rutan innan man själv fyller i något -->
+
+
+  <div id="buttons">
+    <button id="inkomstknapp">Lägg till inkomst (+)</button>
+    <button id="utgiftsknapp">Lägg till utgift (-)</button>
+  </div>
+  <!-- button skapar knapp, id  vilken typ dvd - eller + inkomst/utgift, >text som visas i knapp<  -->
+
+
+  <h2>Saldo: <span id="totalsaldo">0.00</span> kr</h2>
+  <!-- rubrik, lite mindre än h1, balance gör det möjligt att ändra innehållet från >deta exempel 0.00< -->
+
+  <ul id="lista"></ul>
+  <!-- skapar en lista -->
+</body>
+</html>
